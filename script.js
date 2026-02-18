@@ -1,5 +1,5 @@
 /* ============================================
-   Consigliere Support Page — Script
+   HostShot Support Page — Script
    Tab switching and smooth interactions
    ============================================ */
 

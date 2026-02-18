@@ -1,6 +1,6 @@
 /* ============================================
-   Consigliere Support Page — Styles
-   Modern glassmorphism with deep navy palette
+   HostShot Support Page — Styles
+   Warm amber/gold real estate glassmorphism
    ============================================ */
 
 /* --- Reset & Base --- */
@@ -11,19 +11,19 @@
 }
 
 :root {
-    /* HSL Anchor: ~225° (Deep Blue/Navy) */
-    --color-bg: #0a0e1a;
-    --color-bg-subtle: #111627;
-    --color-surface: rgba(255, 255, 255, 0.04);
-    --color-surface-hover: rgba(255, 255, 255, 0.07);
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-border-active: rgba(255, 255, 255, 0.15);
-    --color-text: #e8eaf0;
-    --color-text-secondary: #8b90a5;
-    --color-text-muted: #5a5f75;
-    --color-accent: #6e8efb;
-    --color-accent-glow: rgba(110, 142, 251, 0.3);
-    --color-accent-2: #a777e3;
+    /* HSL Anchor: ~32° (Warm Amber/Gold) ±30° range */
+    --color-bg: #0f0c07;
+    --color-bg-subtle: #1a1508;
+    --color-surface: rgba(255, 220, 120, 0.04);
+    --color-surface-hover: rgba(255, 220, 120, 0.08);
+    --color-border: rgba(255, 200, 80, 0.10);
+    --color-border-active: rgba(255, 200, 80, 0.22);
+    --color-text: #f0ebe0;
+    --color-text-secondary: #a89880;
+    --color-text-muted: #6b5e48;
+    --color-accent: #f5a623;
+    --color-accent-glow: rgba(245, 166, 35, 0.28);
+    --color-accent-2: #e8722a;
     --color-green: #4ade80;
     --color-amber: #fbbf24;
     --color-red: #f87171;
@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-    color: #93b0ff;
+    color: #ffc85a;
     text-decoration: underline;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 .blob-3 {
     width: 350px;
     height: 350px;
-    background: radial-gradient(circle, #4f7cf7, transparent 70%);
+    background: radial-gradient(circle, #c97b2a, transparent 70%);
     bottom: -10%;
     left: 30%;
     animation-delay: -14s;
@@ -140,7 +140,7 @@ a:hover {
     width: 56px;
     height: 56px;
     border-radius: var(--radius-md);
-    background: linear-gradient(135deg, rgba(110, 142, 251, 0.2), rgba(167, 119, 227, 0.2));
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.22), rgba(232, 114, 42, 0.18));
     border: 1px solid var(--color-border);
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@ a:hover {
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #fff 0%, var(--color-accent) 100%);
+    background: linear-gradient(135deg, #fff8ee 0%, var(--color-accent) 60%, var(--color-accent-2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -204,9 +204,9 @@ a:hover {
 }
 
 .tab-btn.active {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(245, 166, 35, 0.12);
+    color: #fff8ee;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(245, 166, 35, 0.18);
 }
 
 .tab-btn svg {
@@ -288,7 +288,7 @@ a:hover {
     width: 48px;
     height: 48px;
     border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, rgba(110, 142, 251, 0.15), rgba(167, 119, 227, 0.1));
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.15), rgba(232, 114, 42, 0.10));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,7 +329,7 @@ a:hover {
 }
 
 .support-link-btn:hover {
-    color: #93b0ff;
+    color: #ffc85a;
 }
 
 .support-badge {
@@ -337,11 +337,18 @@ a:hover {
     font-size: 11px;
     font-weight: 700;
     color: var(--color-accent);
-    background: rgba(110, 142, 251, 0.12);
+    background: rgba(245, 166, 35, 0.12);
+    border: 1px solid rgba(245, 166, 35, 0.20);
     padding: 4px 10px;
     border-radius: 20px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+}
+
+.support-badge.feature-badge {
+    color: var(--color-accent-2);
+    background: rgba(232, 114, 42, 0.12);
+    border-color: rgba(232, 114, 42, 0.20);
 }
 
 /* --- Privacy Policy Panel --- */
@@ -504,13 +511,13 @@ a:hover {
 }
 
 .highlight-icon.ai-icon {
-    background: rgba(110, 142, 251, 0.12);
+    background: rgba(245, 166, 35, 0.14);
     color: var(--color-accent);
 }
 
 .highlight-icon.optional-icon {
-    background: rgba(251, 191, 36, 0.12);
-    color: var(--color-amber);
+    background: rgba(232, 114, 42, 0.14);
+    color: var(--color-accent-2);
 }
 
 .policy-highlights li div strong {
@@ -529,7 +536,7 @@ a:hover {
 
 /* --- Callout Box --- */
 .policy-callout {
-    background: rgba(110, 142, 251, 0.06);
+    background: rgba(245, 166, 35, 0.06);
     border-left: 3px solid var(--color-accent);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     padding: 16px 20px;
@@ -566,6 +573,8 @@ a:hover {
     color: var(--color-accent);
 }
 
+/* --- Tab nav wraps on small screens for 3 tabs --- */
+
 /* ============================================
    Responsive
    ============================================ */
@@ -590,10 +599,12 @@ a:hover {
 
     .tab-nav {
         width: 100%;
+        flex-wrap: wrap;
     }
 
     .tab-btn {
         flex: 1;
+        min-width: calc(50% - 6px);
         justify-content: center;
         padding: 10px 14px;
         font-size: 13px;
@@ -633,6 +644,12 @@ a:hover {
     .blob-1 { width: 300px; height: 300px; }
     .blob-2 { width: 250px; height: 250px; }
     .blob-3 { width: 200px; height: 200px; }
+}
+
+@media (max-width: 400px) {
+    .tab-btn {
+        min-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
