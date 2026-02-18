@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigliere — Support</title>
+    <meta name="description" content="Support page for Consigliere — Your AI-powered personal assistant. Privacy policy, contact, and help.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Consigliere — Support">
+    <meta property="og:description" content="Support page for Consigliere. Privacy policy, contact information, and help resources.">
+    <meta property="og:type" content="website">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤵</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤵</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ambient background blobs -->
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="app-identity">
+                    <div class="app-icon">
+                        <span>🤵</span>
+                    </div>
+                    <div>
+                        <h1 class="app-name">Consigliere</h1>
+                        <p class="app-tagline">Your AI-Powered Personal Assistant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <nav class="tab-nav" role="tablist">
+                <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-support" data-tab="support">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Support
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-privacy" data-tab="privacy">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy Policy
+                </button>
+            </nav>
+
+            <!-- Tab Panels -->
+            <div class="tab-panels">
+
+                <!-- Support Panel -->
+                <section class="tab-panel active" id="panel-support" role="tabpanel">
+                    <div class="glass-card">
+                        <div class="support-hero">
+                            <h2>How can we help?</h2>
+                            <p>We're here to make sure you have the best experience with Consigliere.</p>
+                        </div>
+
+                        <div class="support-grid">
+                            <div class="support-item">
+                                <div class="support-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <h3>Contact Us</h3>
+                                <p>Have a question, feedback, or need help? Reach out and we'll get back to you as soon as possible.</p>
+                                <a href="mailto:support@consigliere-app.com" class="support-link">support@consigliere-app.com</a>
+                            </div>
+
+                            <div class="support-item">
+                                <div class="support-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                                </div>
+                                <h3>App Information</h3>
+                                <p>Consigliere is an AI-powered personal assistant that helps you manage your day with intelligence and style.</p>
+                                <span class="support-badge">iOS 18+</span>
+                            </div>
+
+                            <div class="support-item">
+                                <div class="support-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <h3>Your Privacy</h3>
+                                <p>We take your privacy seriously. No tracking, no ads, no data sales. Read our full privacy policy for details.</p>
+                                <button class="support-link-btn" onclick="switchToTab('privacy')">Read Privacy Policy &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Privacy Policy Panel -->
+                <section class="tab-panel" id="panel-privacy" role="tabpanel">
+                    <div class="glass-card policy-card">
+                        <div class="policy-header">
+                            <h2>Privacy Policy</h2>
+                            <p class="effective-date">Effective Date: February 10, 2026</p>
+                        </div>
+
+                        <div class="policy-intro">
+                            <p>This Privacy Policy explains how Consigliere ("the App") collects, uses, and shares information when you use the App. This policy applies to the App and related services provided by Kaan Yildiz ("we," "us," or "our").</p>
+                            <p>If you have questions, contact us at: <a href="mailto:support@consigliere-app.com">support@consigliere-app.com</a></p>
+                        </div>
+
+                        <!-- Section 1 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">1.</span> Summary</h3>
+                            <ul class="policy-highlights">
+                                <li>
+                                    <span class="highlight-icon no-track">&#10005;</span>
+                                    <div>
+                                        <strong>No tracking:</strong> We do not track you across apps or websites and we do not use App Tracking Transparency because we do not perform tracking.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon no-track">&#10005;</span>
+                                    <div>
+                                        <strong>No ads / no sale:</strong> We do not sell personal data and we do not share data for advertising purposes.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon ai-icon">&#9881;</span>
+                                    <div>
+                                        <strong>AI processing:</strong> When you use AI features, your request content may be transmitted to third-party AI providers to generate responses.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon optional-icon">&#9673;</span>
+                                    <div>
+                                        <strong>Connected data is optional:</strong> Calendar/Reminders (and similar sources) are used only if you explicitly enable AI Actions in Settings and grant system permissions.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">2.</span> Information We Collect</h3>
+
+                            <h4>A) Information you provide</h4>
+                            <ul>
+                                <li><strong>User Content:</strong> Text you type, paste, or otherwise submit to the App (for example, prompts, messages, notes, or instructions).</li>
+                                <li><strong>Attachments you choose to submit</strong> (if the App supports attachments): Any file/image you intentionally send as part of a request.</li>
+                            </ul>
+
+                            <h4>B) Connected sources (only if you enable them)</h4>
+                            <p>If you enable AI Actions and grant system permissions, the App may access limited data from sources such as:</p>
+                            <ul>
+                                <li><strong>Reminders:</strong> reminder titles, dates/times, notes you include, and list names as needed to create/update reminders you request.</li>
+                                <li><strong>Calendar:</strong> event titles, start/end times, timezone, location, notes you include, and calendar names as needed to create/update events you request.</li>
+                            </ul>
+                            <div class="policy-callout">
+                                <strong>Important:</strong> Connected-source access is disabled by default. The App does not use these sources unless you explicitly enable them in Settings and grant permission at the OS level.
+                            </div>
+
+                            <h4>C) Technical information (minimal)</h4>
+                            <p>We may process minimal technical data needed to operate the App and deliver requests, such as app version, device language, and basic error information. We do not use this information for tracking or advertising.</p>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">3.</span> How We Use Information</h3>
+                            <p>We use information only to provide and operate the App, including to:</p>
+                            <ul>
+                                <li>Generate AI responses you request</li>
+                                <li>Perform AI Actions you request (e.g., create a reminder or calendar event) when enabled</li>
+                                <li>Maintain reliability, prevent abuse, and debug failures</li>
+                                <li>Provide customer support if you contact us</li>
+                            </ul>
+                            <p>We do not use your information for targeted advertising, data brokerage, or tracking.</p>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">4.</span> Third-Party AI Processing (OpenAI and Google Gemini)</h3>
+                            <p>To provide AI features, the App may transmit certain content off-device to third-party AI services.</p>
+
+                            <h4>A) Who we share with</h4>
+                            <ul>
+                                <li>OpenAI (OpenAI, L.L.C.)</li>
+                                <li>Google Gemini (provided by Google LLC)</li>
+                            </ul>
+
+                            <h4>B) What data is sent</h4>
+                            <p>Depending on what you do in the App, the App may send:</p>
+                            <ul>
+                                <li>Your prompt/message text and related context needed to generate a response</li>
+                                <li>If you enabled AI Actions and explicitly request an action, the minimum necessary details from enabled sources (e.g., event time/title for a calendar request, reminder text/due date for a reminder request)</li>
+                                <li>Minimal technical metadata required to route and deliver the request (e.g., app version, device language)</li>
+                            </ul>
+
+                            <h4>C) When data is sent</h4>
+                            <ul>
+                                <li><strong>General AI features:</strong> When you submit a request that requires an AI-generated response.</li>
+                                <li><strong>AI Actions with connected sources:</strong> Only when (1) you enable AI Actions in Settings, (2) you grant OS permissions, and (3) you explicitly request an action that requires those sources.</li>
+                            </ul>
+
+                            <h4>D) User permission and controls</h4>
+                            <ul>
+                                <li>AI Actions are OFF by default and require explicit user enablement in Settings.</li>
+                                <li>You can revoke Calendar/Reminders access at any time in your device settings.</li>
+                                <li>You can disable AI Actions at any time in the App's Settings.</li>
+                            </ul>
+
+                            <h4>E) Data retention by third-party AI providers</h4>
+                            <p>We do not sell your prompts or connected-source data, and we do not allow third parties to use it for advertising through our App. However, third-party AI providers may process and retain request data according to their own terms and policies for purposes such as safety, abuse prevention, and service reliability.</p>
+                            <div class="policy-callout">
+                                If you do not want information processed by third-party AI services, do not submit that information in prompts and keep AI features / AI Actions disabled.
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">5.</span> What We Do Not Collect or Use</h3>
+                            <ul>
+                                <li>We do not track your activity across other companies' apps and websites.</li>
+                                <li>We do not collect or share data for targeted advertising.</li>
+                                <li>We do not sell personal data.</li>
+                                <li>We do not intentionally collect sensitive personal data unless you choose to include it in what you submit.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">6.</span> Sharing of Information</h3>
+                            <p>We share information only in these cases:</p>
+                            <ul>
+                                <li>With AI providers (OpenAI and/or Google Gemini) to fulfill your AI requests as described above</li>
+                                <li>With service providers strictly for app operation (if applicable), under confidentiality obligations</li>
+                                <li>If required by law or to protect rights, safety, and security</li>
+                                <li>In a business transfer (e.g., merger/acquisition), with notice where required</li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 7 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">7.</span> Data Storage and Deletion</h3>
+                            <ul>
+                                <li>The App may store your conversation history and settings on your device to provide continuity and user experience.</li>
+                                <li>You can delete chat history within the App (if provided) and/or by deleting the App from your device.</li>
+                                <li>If you enable connected sources, items created (e.g., reminders/events) will remain in those services until you delete them there.</li>
+                            </ul>
+                            <div class="policy-callout">
+                                <strong>Note:</strong> Content sent to third-party AI providers may also be handled according to those providers' retention policies (see Section 4E).
+                            </div>
+                        </div>
+
+                        <!-- Section 8 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">8.</span> Security</h3>
+                            <p>We use reasonable administrative, technical, and organizational safeguards designed to protect information. No method of transmission or storage is 100% secure.</p>
+                        </div>
+
+                        <!-- Section 9 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">9.</span> Children's Privacy</h3>
+                            <p>The App is not intended for children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children.</p>
+                        </div>
+
+                        <!-- Section 10 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">10.</span> International Transfers</h3>
+                            <p>Your information may be processed in countries other than where you live, including where our service providers and AI providers operate. These locations may have different data protection laws.</p>
+                        </div>
+
+                        <!-- Section 11 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">11.</span> Your Rights and Choices</h3>
+                            <p>Depending on your location, you may have rights to access, correct, delete, or object to certain processing of your information. You can contact us at <a href="mailto:support@consigliere-app.com">support@consigliere-app.com</a>.</p>
+                            <p>You can also control connected-source permissions in device settings and disable AI Actions in the App.</p>
+                        </div>
+
+                        <!-- Section 12 -->
+                        <div class="policy-section">
+                            <h3><span class="section-num">12.</span> Changes to This Policy</h3>
+                            <p>We may update this Privacy Policy from time to time. We will update the "Effective Date" above and, when appropriate, provide additional notice in the App.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Consigliere. All rights reserved.</p>
+            <p class="footer-contact">Contact: <a href="mailto:support@consigliere-app.com">support@consigliere-app.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
